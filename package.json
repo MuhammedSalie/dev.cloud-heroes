@@ -2,7 +2,7 @@
   "name": "cloud-heroes",
   "version": "1.0.0",
   "private": false,
-  "homepage": "https://MuhammedSalie.github.io/cloud-heroes",
+  "homepage": "https://MuhammedSalie.github.io/dev.cloud-heroes",
   "dependencies": {
     "@auth0/auth0-react": "^1.4.0",
     "npx": "^10.2.2",
