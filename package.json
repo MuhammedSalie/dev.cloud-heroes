@@ -2,7 +2,7 @@
   "name": "cloud-heroes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://MuhammedSalie.github.io/dev.cloud-heroes",
+  "homepage": "https://MuhammedSalie.github.io/dev.cloud-heroes",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
