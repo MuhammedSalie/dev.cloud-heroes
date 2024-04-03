@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-
 import { NavBar, Footer } from "./components";
 import { Home, Quiz, Profile, ExternalApi } from "./views";
 
@@ -27,3 +26,4 @@ const App = () => {
 };
 
 export default App;
+
