@@ -13,8 +13,9 @@ const App = () => {
       <div className="container flex-grow-1">
         <div className="mt-5">
           <Switch>
-            <Route path="/" exact component={Home} />
-		<Route path="/quiz" component={Quiz} />
+          <Route path="/" exact component={Home} />
+            <Route path="/dev.cloud-heroes" exact component={Home} />
+            <Route path="/quiz" component={Quiz} />
             <Route path="/profile" component={Profile} />
             <Route path="/external-api" component={ExternalApi} />
           </Switch>
