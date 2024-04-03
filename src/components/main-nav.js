@@ -18,7 +18,7 @@ const MainNav = () => {
   return (
     <div className="navbar-nav mr-auto">
       <NavLink
-        to="/"
+        to="/dev.cloud-heroes"
         exact
         className="nav-link"
         activeClassName="router-link-exact-active"
