@@ -6,7 +6,7 @@ const Footer = () => (
     <img src={logo} height="80px" align="center" alt="Logo"/>
       Cloud Insights Copyright 2024      
     <header align="center">
-    v1.0.1
+    v1.1.1
     </header>
   </footer>
 );

@@ -7,7 +7,7 @@ const Resources = () => (
     Where can you get started with Hands-On ✨"AWS Projects"✨??
 <p>Here are some resources :</p>
 <ul>
-    <li><a href="https://aws.amazon.com/getting-started/">AWS Getting Started Resource Centre</a></li>
+    <li><a href="window.open(https://aws.amazon.com/getting-started/, '_system');">AWS Getting Started Resource Centre</a></li>
     <li><a href="https://workshops.aws/">AWS Workshops</a></li>
     <li><a href="https://aws.amazon.com/education/awseducate/">AWS Educate</a></li>
 </ul>
