@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { NavBar, Footer } from "./components";
-import { Home, Quiz, Profile, ExternalApi } from "./views";
+import { ResourcesMenu, ExamMenu, AboutMenu, Home, Quiz, Profile, ExternalApi } from "./views";
 
 import "./App.css";
 
@@ -17,6 +17,9 @@ const App = () => {
             <Route path="/quiz" component={Quiz} />
             <Route path="/profile" component={Profile} />
             <Route path="/external-api" component={ExternalApi} />
+            <Route path="/about" component={AboutMenu} />
+            <Route path="/exam" component={ExamMenu} />
+            <Route path="/resources" component={ResourcesMenu} />
           </Switch>
         </div>
       </div>

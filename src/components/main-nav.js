@@ -33,6 +33,30 @@ const MainNav = () => {
       >
         Quiz
     </NavLink>
+    <NavLink
+        to="/exam"
+        exact
+        className="nav-link"
+        activeClassName="router-link-exact-active"
+      >
+        Exam
+    </NavLink>
+    <NavLink
+        to="/about"
+        exact
+        className="nav-link"
+        activeClassName="router-link-exact-active"
+      >
+        About
+    </NavLink>
+    <NavLink
+        to="/resources"
+        exact
+        className="nav-link"
+        activeClassName="router-link-exact-active"
+      >
+        Resources
+    </NavLink>
       {isAuthenticated && (
         <NavLink
           to="/profile"
