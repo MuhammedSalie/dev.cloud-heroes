@@ -33,6 +33,7 @@ const MainNav = () => {
       >
         Quiz
     </NavLink>
+    {isAuthenticated && (
     <NavLink
         to="/exam"
         exact
@@ -41,6 +42,7 @@ const MainNav = () => {
       >
         Exam
     </NavLink>
+    )}
     <NavLink
         to="/about"
         exact
