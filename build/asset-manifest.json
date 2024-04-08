@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/dev.cloud-heroes/static/css/main.c5311b7a.chunk.css",
-    "main.js": "/dev.cloud-heroes/static/js/main.9fb75210.chunk.js",
-    "main.js.map": "/dev.cloud-heroes/static/js/main.9fb75210.chunk.js.map",
+    "main.js": "/dev.cloud-heroes/static/js/main.b78cf32c.chunk.js",
+    "main.js.map": "/dev.cloud-heroes/static/js/main.b78cf32c.chunk.js.map",
     "runtime-main.js": "/dev.cloud-heroes/static/js/runtime-main.4a4469bf.js",
     "runtime-main.js.map": "/dev.cloud-heroes/static/js/runtime-main.4a4469bf.js.map",
-    "static/js/2.90d0ea5e.chunk.js": "/dev.cloud-heroes/static/js/2.90d0ea5e.chunk.js",
-    "static/js/2.90d0ea5e.chunk.js.map": "/dev.cloud-heroes/static/js/2.90d0ea5e.chunk.js.map",
+    "static/js/2.25803b04.chunk.js": "/dev.cloud-heroes/static/js/2.25803b04.chunk.js",
+    "static/js/2.25803b04.chunk.js.map": "/dev.cloud-heroes/static/js/2.25803b04.chunk.js.map",
     "index.html": "/dev.cloud-heroes/index.html",
     "static/css/main.c5311b7a.chunk.css.map": "/dev.cloud-heroes/static/css/main.c5311b7a.chunk.css.map",
-    "static/js/2.90d0ea5e.chunk.js.LICENSE.txt": "/dev.cloud-heroes/static/js/2.90d0ea5e.chunk.js.LICENSE.txt",
+    "static/js/2.25803b04.chunk.js.LICENSE.txt": "/dev.cloud-heroes/static/js/2.25803b04.chunk.js.LICENSE.txt",
     "static/media/insights.c8ac0b08.gif": "/dev.cloud-heroes/static/media/insights.c8ac0b08.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.4a4469bf.js",
-    "static/js/2.90d0ea5e.chunk.js",
+    "static/js/2.25803b04.chunk.js",
     "static/css/main.c5311b7a.chunk.css",
-    "static/js/main.9fb75210.chunk.js"
+    "static/js/main.b78cf32c.chunk.js"
   ]
 }

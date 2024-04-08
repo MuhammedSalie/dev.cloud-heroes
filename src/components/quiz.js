@@ -2,13 +2,27 @@ import React, { useState } from 'react';
 import quizData from './quizData';
 
 function Quiz() {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
+
+  function generateRandom(maxLimit = quizData.length){
+    let count = Math.random() * maxLimit;
+    console.log(count); 
+  
+    count = Math.floor(count); 
+  
+    return count;
+  }
+
+  const [currentQuestion, setCurrentQuestion] = useState(generateRandom());
+  const [currentCount, setCurrentCount] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(""); 
   const [isCorrect, setIsCorrect] = useState(null);
-
+  const currentMax = 15;
+  
   const handleAnswerOptionClick = (option) => {
+    setIsCorrect(null); // Reset for the next question
+    setSelectedAnswer(""); // Reset selected answer
     const correctAnswer = quizData[currentQuestion].answer;
     setSelectedAnswer(option);
     if (option === correctAnswer) {
@@ -20,29 +34,40 @@ function Quiz() {
 
     // Delay moving to the next question to allow the user to see feedback
     setTimeout(() => {
-      const nextQuestion = currentQuestion + 1;
-      if (nextQuestion < quizData.length) {
+      setIsCorrect(null); // Reset for the next question
+      setSelectedAnswer(""); // Reset selected answer
+      const nextQuestion = generateRandom();
+      const nextCount = currentCount +1;
+      if (currentQuestion !== quizData.length-1){
+      if (nextCount < currentMax) {
         setCurrentQuestion(nextQuestion);
+        setCurrentCount(nextCount);
         setIsCorrect(null); // Reset for the next question
         setSelectedAnswer(""); // Reset selected answer
       } else {
         setShowScore(true);
       }
-    }, 1000); // Adjust time as needed
+    } else {
+        setCurrentQuestion(generateRandom());
+        setCurrentCount(nextCount);
+        setIsCorrect(null); // Reset for the next question
+        setSelectedAnswer(""); // Reset selected answer
+    }
+    }, 5000); // Adjust time as needed
   };
 
   return (
     <div className='Quiz'>
       {showScore ? (
         <div className='score-section'>
-          You scored {score} out of {quizData.length}
+          You scored {score} out of {currentMax}
         </div>
       ) : (
         <>
           <div className='question-section'>
             <div className='question-count'>
-              <h2 className="my-5 text-center">Practice quiz</h2>
-              <span>Question {currentQuestion + 1}</span>/{quizData.length}
+              <h2 className="my-5 text-center">Practice quiz {currentQuestion}</h2>
+              <span>Question {currentCount + 1}</span>/{currentMax}
             </div>
             <div className='question-text'>{quizData[currentQuestion].question}</div>
           </div>
@@ -60,8 +85,10 @@ function Quiz() {
           {selectedAnswer && (
             <div style={{ marginTop: '10px' }}>
               {isCorrect ? 'Correct! 🎉' : 'Sorry, that’s not right. 😢'}
+              <div className='explain-text'>{quizData[currentQuestion].explain}</div>
             </div>
-          )}
+             )
+            }
         </>
       )}
     </div>
