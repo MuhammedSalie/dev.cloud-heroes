@@ -72,7 +72,7 @@ function Quiz() {
           <div className='question-section'>
             <div className='question-count'>
             <RobotClimbingStairs score={score} currentMax={currentMax} /> {/* Rendering the RobotClimbingStairs component */}
-              <h3 className="my-5 text-center">Practice quiz (Help the spaceship find the robot) </h3>
+              <h3 className="my-5 text-center">Practice quiz (help the spaceship find the robot) </h3>
               <span>Question {currentCount + 1}</span>/{currentMax}
             </div>
             <div className='question-text'> {quizData[currentQuestion].question}</div>
