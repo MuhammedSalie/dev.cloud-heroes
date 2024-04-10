@@ -2,7 +2,7 @@ import React from "react";
 
 const Resources = () => (
   <div className="hello">
-    <h2 className="my-5 text-center">Resources</h2>
+    <h3 className="my-5 text-center">Resources</h3>
     <p>
     Where can you get started with Hands-On ✨"AWS Projects"✨??
 <p>Here are some resources :</p>

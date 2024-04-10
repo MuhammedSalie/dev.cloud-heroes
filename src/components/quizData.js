@@ -177,8 +177,249 @@ const quizData = [
   "options": ["EC2", "S3", "Lambda", "RDS"],
   "answer": "Lambda",
   "explain": "Answer: Lambda **Explanation:** AWS Lambda is a serverless computing service that lets you run code in response to events without provisioning or managing servers, making it ideal for serverless computing."
-}
-];
+},
+ {
+     "question": "What is the maximum duration for a single AWS Lambda function invocation?",
+     "options": ["15 minutes", "5 minutes", "60 minutes", "30 minutes"],
+     "answer": "5 minutes",
+     "explain": "Answer: 5 minutes **Explanation:** The maximum duration for a single AWS Lambda function invocation is 5 minutes."
+   },
+   {
+     "question": "Which AWS service is designed to provide a fully managed Kafka-compatible event streaming platform?",
+     "options": ["SQS", "Kinesis", "MSK", "Glue"],
+     "answer": "MSK",
+     "explain": "Answer: MSK **Explanation:** Amazon Managed Streaming for Apache Kafka (MSK) is a fully managed service that enables you to build and run applications that use Apache Kafka to process streaming data."
+   },
+   {
+     "question": "What is the maximum number of rules allowed per security group in AWS?",
+     "options": ["50", "100", "250", "500"],
+     "answer": "250",
+     "explain": "Answer: 250 **Explanation:** The maximum number of rules allowed per security group in AWS is 250."
+   },
+   {
+     "question": "Which AWS service provides a fully managed graph database service?",
+     "options": ["DynamoDB", "Redshift", "Neptune", "ElastiCache"],
+     "answer": "Neptune",
+     "explain": "Answer: Neptune **Explanation:** Amazon Neptune is a fully managed graph database service that makes it easy to build and run applications that work with highly connected datasets."
+   },
+   {
+     "question": "What is the maximum number of tags allowed per resource in AWS?",
+     "options": ["10", "20", "50", "100"],
+     "answer": "50",
+     "explain": "Answer: 50 **Explanation:** The maximum number of tags allowed per resource in AWS is 50."
+   },
+   {
+     "question": "Which AWS service provides a fully managed service for running Microsoft SQL Server databases?",
+     "options": ["Aurora", "RDS", "Redshift", "DynamoDB"],
+     "answer": "RDS",
+     "explain": "Answer: RDS **Explanation:** Amazon RDS (Relational Database Service) provides a fully managed service for running Microsoft SQL Server databases in the cloud."
+   },
+   {
+     "question": "What is the maximum size of a single object that can be uploaded to Amazon S3 using a PUT request?",
+     "options": ["5 TB", "10 TB", "1 TB", "20 TB"],
+     "answer": "5 TB",
+     "explain": "Answer: 5 TB **Explanation:** The maximum size of a single object that can be uploaded to Amazon S3 using a PUT request is 5 terabytes (TB)."
+   },
+   {
+     "question": "Which AWS service is designed for real-time analytics and streaming data processing?",
+     "options": ["Glue", "Athena", "EMR", "Kinesis"],
+     "answer": "Kinesis",
+     "explain": "Answer: Kinesis **Explanation:** Amazon Kinesis is a platform for collecting, processing, and analyzing real-time streaming data at scale."
+   },
+   {
+     "question": "What is the maximum number of security groups allowed per network interface in AWS?",
+     "options": ["5", "10", "25", "50"],
+     "answer": "5",
+     "explain": "Answer: 5 **Explanation:** The maximum number of security groups allowed per network interface in AWS is 5."
+   },
+   {
+     "question": "Which AWS service provides a fully managed service for creating and managing relational databases?",
+     "options": ["DynamoDB", "RDS", "Aurora", "Redshift"],
+     "answer": "RDS",
+     "explain": "Answer: RDS **Explanation:** Amazon RDS (Relational Database Service) is a fully managed service that simplifies the process of setting up, operating, and scaling relational databases in the cloud."
+   },
+   {
+    "question": "Which AWS service is commonly used for deploying and managing containerized applications?",
+    "options": ["ECS", "RDS", "Lambda", "EKS"],
+    "answer": "ECS",
+    "explain": "Answer: ECS **Explanation:** Amazon ECS (Elastic Container Service) is commonly used for deploying and managing containerized applications in the AWS cloud."
+  },
+  {
+    "question": "What is the maximum number of rules allowed per security group in AWS?",
+    "options": ["50", "100", "250", "500"],
+    "answer": "250",
+    "explain": "Answer: 250 **Explanation:** The maximum number of rules allowed per security group in AWS is 250."
+  },
+  {
+    "question": "Which AWS service is designed to provide a fully managed Kafka-compatible event streaming platform?",
+    "options": ["SQS", "Kinesis", "MSK", "Glue"],
+    "answer": "MSK",
+    "explain": "Answer: MSK **Explanation:** Amazon Managed Streaming for Apache Kafka (MSK) is a fully managed service that enables you to build and run applications that use Apache Kafka to process streaming data."
+  },
+  {
+    "question": "What is the maximum number of tags allowed per resource in AWS?",
+    "options": ["10", "20", "50", "100"],
+    "answer": "50",
+    "explain": "Answer: 50 **Explanation:** The maximum number of tags allowed per resource in AWS is 50."
+  },
+  {
+    "question": "Which AWS service provides a fully managed graph database service?",
+    "options": ["DynamoDB", "Redshift", "Neptune", "ElastiCache"],
+    "answer": "Neptune",
+    "explain": "Answer: Neptune **Explanation:** Amazon Neptune is a fully managed graph database service that makes it easy to build and run applications that work with highly connected datasets."
+  },
+  {
+    "question": "What is the maximum size of a single object that can be uploaded to Amazon S3 using a PUT request?",
+    "options": ["5 TB", "10 TB", "1 TB", "20 TB"],
+    "answer": "5 TB",
+    "explain": "Answer: 5 TB **Explanation:** The maximum size of a single object that can be uploaded to Amazon S3 using a PUT request is 5 terabytes (TB)."
+  },
+  {
+    "question": "Which AWS service provides a fully managed service for running Microsoft SQL Server databases?",
+    "options": ["Aurora", "RDS", "Redshift", "DynamoDB"],
+    "answer": "RDS",
+    "explain": "Answer: RDS **Explanation:** Amazon RDS (Relational Database Service) provides a fully managed service for running Microsoft SQL Server databases in the cloud."
+  },
+  {
+    "question": "Which AWS service is designed for real-time analytics and streaming data processing?",
+    "options": ["Glue", "Athena", "EMR", "Kinesis"],
+    "answer": "Kinesis",
+    "explain": "Answer: Kinesis **Explanation:** Amazon Kinesis is a platform for collecting, processing, and analyzing real-time streaming data at scale."
+  },
+  {
+    "question": "What is the maximum number of security groups allowed per network interface in AWS?",
+    "options": ["5", "10", "25", "50"],
+    "answer": "5",
+    "explain": "Answer: 5 **Explanation:** The maximum number of security groups allowed per network interface in AWS is 5."
+  },
+  {
+    "question": "Which AWS service provides a fully managed service for creating and managing relational databases?",
+    "options": ["DynamoDB", "RDS", "Aurora", "Redshift"],
+    "answer": "RDS",
+    "explain": "Answer: RDS **Explanation:** Amazon RDS (Relational Database Service) is a fully managed service that simplifies the process of setting up, operating, and scaling relational databases in the cloud."
+  },
+  {
+    "question": "What is the maximum duration for a single AWS Lambda function invocation?",
+    "options": ["15 minutes", "5 minutes", "60 minutes", "30 minutes"],
+    "answer": "5 minutes",
+    "explain": "Answer: 5 minutes **Explanation:** The maximum duration for a single AWS Lambda function invocation is 5 minutes."
+  },
+  {
+    "question": "Which AWS service is designed to provide a fully managed Kafka-compatible event streaming platform?",
+    "options": ["SQS", "Kinesis", "MSK", "Glue"],
+    "answer": "MSK",
+    "explain": "Answer: MSK **Explanation:** Amazon Managed Streaming for Apache Kafka (MSK) is a fully managed service that enables you to build and run applications that use Apache Kafka to process streaming data."
+  },
+  {
+    "question": "What is the maximum number of rules allowed per security group in AWS?",
+    "options": ["50", "100", "250", "500"],
+    "answer": "250",
+    "explain": "Answer: 250 **Explanation:** The maximum number of rules allowed per security group in AWS is 250."
+  },
+  {
+    "question": "Which AWS service is designed to provide a fully managed Kafka-compatible event streaming platform?",
+    "options": ["SQS", "Kinesis", "MSK", "Glue"],
+    "answer": "MSK",
+    "explain": "Answer: MSK **Explanation:** Amazon Managed Streaming for Apache Kafka (MSK) is a fully managed service that enables you to build and run applications that use Apache Kafka to process streaming data."
+  },
+  {
+    "question": "What is the maximum number of tags allowed per resource in AWS?",
+    "options": ["10", "20", "50", "100"],
+    "answer": "50",
+    "explain": "Answer: 50 **Explanation:** The maximum number of tags allowed per resource in AWS is 50."
+  },
+  {
+    "question": "Which AWS service provides a fully managed graph database service?",
+    "options": ["DynamoDB", "Redshift", "Neptune", "ElastiCache"],
+    "answer": "Neptune",
+    "explain": "Answer: Neptune **Explanation:** Amazon Neptune is a fully managed graph database service that makes it easy to build and run applications that work with highly connected datasets."
+  },
+  {
+     "question": "What are the benefits of using Amazon Aurora compared to traditional relational databases?",
+     "options": ["Lower cost and higher performance", "Higher cost and lower performance", "Higher latency and lower scalability", "Lower security and higher complexity"],
+     "answer": "Lower cost and higher performance",
+     "explain": "Answer: Lower cost and higher performance **Explanation:** Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud, offering the performance and availability of commercial databases at a fraction of the cost."
+   },
+   {
+     "question": "Which AWS service provides automated code deployments to EC2 instances?",
+     "options": ["AWS CodeDeploy", "AWS CodeCommit", "AWS CodePipeline", "AWS CodeBuild"],
+     "answer": "AWS CodeDeploy",
+     "explain": "Answer: AWS CodeDeploy **Explanation:** AWS CodeDeploy is a fully managed deployment service that automates software deployments to a variety of compute services, including Amazon EC2 instances and AWS Lambda functions."
+   },
+   {
+     "question": "What is the purpose of AWS Organizations?",
+     "options": ["To manage user authentication", "To automate resource provisioning", "To centrally manage and govern multiple AWS accounts", "To monitor AWS service health"],
+     "answer": "To centrally manage and govern multiple AWS accounts",
+     "explain": "Answer: To centrally manage and govern multiple AWS accounts **Explanation:** AWS Organizations helps you centrally manage and govern your AWS environment as you grow and scale your workloads on AWS."
+   },
+   {
+     "question": "Which AWS service provides a fully managed message queuing service that supports both standard and FIFO queues?",
+     "options": ["Amazon SQS", "Amazon SNS", "Amazon MQ", "Amazon Kinesis"],
+     "answer": "Amazon SQS",
+     "explain": "Answer: Amazon SQS **Explanation:** Amazon SQS (Simple Queue Service) is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications."
+   },
+   {
+     "question": "What is the main benefit of using Amazon CloudFront?",
+     "options": ["Low-latency content delivery", "Highly available database storage", "Real-time data analytics", "Serverless compute capacity"],
+     "answer": "Low-latency content delivery",
+     "explain": "Answer: Low-latency content delivery **Explanation:** Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency."
+   },
+   {
+    "question": "A company wants to create a learning application for students. The learning application must give students the option to choose a button to have the text read out loud to them. Which AWS machine learning service will meet this requirement?",
+    "options": ["Amazon Polly", "Amazon Comprehend", "Amazon Rekognition", "Amazon Transcribe"],
+    "answer": "Amazon Polly",
+    "explain": "Answer: Amazon Polly **Explanation:** Amazon Polly is a text-to-speech (TTS) service that converts text into lifelike speech. It allows developers to create applications that talk, enabling users to have text read out loud in multiple languages."
+  },
+  {
+    "question": "A company wants to establish a consistent and private connection from the company's on-premises data center to the AWS Cloud. Which AWS service will meet these requirements?",
+    "options": ["Amazon Direct Connect", "Amazon VPC", "Amazon Route 53", "Amazon EC2"],
+    "answer": "Amazon Direct Connect",
+    "explain": "Answer: Amazon Direct Connect **Explanation:** Amazon Direct Connect establishes a dedicated network connection from the customer's data center to AWS, providing a consistent and private connection for accessing AWS services without traversing the public internet."
+  },
+  {
+    "question": "A user needs to automatically discover, classify, and protect sensitive data stored in Amazon S3. Which AWS service can meet these requirements?",
+    "options": ["Amazon GuardDuty", "Amazon Inspector", "Amazon Detective", "Amazon Macie"],
+    "answer": "Amazon Macie",
+    "explain": "Answer: Amazon Macie **Explanation:** Amazon Macie is a fully managed data security and data privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive data stored in Amazon S3."
+  },
+  {
+    "question": "A company requires a relational database on AWS that records new customer orders from a website. Which AWS service or feature will meet this requirement?",
+    "options": ["Amazon S3", "Amazon DynamoDB", "Amazon RDS", "Amazon Redshift"],
+    "answer": "Amazon RDS",
+    "explain": "Answer: Amazon RDS **Explanation:** Amazon RDS (Relational Database Service) is a fully managed relational database service that supports several database engines including MySQL, PostgreSQL, SQL Server, and Oracle. It is suitable for recording new customer orders from a website as it provides a relational database environment with features such as scalability, high availability, and automated backups."
+  },
+  {
+    "question": "Which AWS service allows customers to purchase unused Amazon EC2 capacity at an often discounted rate?",
+    "options": ["Amazon EC2 Spot Instances", "Amazon EC2 Reserved Instances", "Amazon EC2 On-Demand Instances", "Amazon EC2 Dedicated Hosts"],
+    "answer": "Amazon EC2 Spot Instances",
+    "explain": "Answer: Amazon EC2 Spot Instances **Explanation:** Amazon EC2 Spot Instances allow customers to purchase spare EC2 compute capacity at significantly lower prices compared to On-Demand instances. Spot Instances are well-suited for workloads that are flexible in terms of start and end times and can handle interruptions."
+  },
+  {
+    "question": "Which AWS service identifies security groups that allow unrestricted access to a user's AWS resources?",
+    "options": ["Amazon GuardDuty", "Amazon Inspector", "AWS Config", "Amazon Detective"],
+    "answer": "AWS Config",
+    "explain": "Answer: AWS Config **Explanation:** AWS Config continuously monitors and records configurations of AWS resources, including security groups. It provides insights into resource configuration changes, including identifying security groups that allow unrestricted access, helping users maintain compliance and security best practices."
+  },
+  {
+    "question": "A company needs to monitor and receive alerts about AWS Management Console sign-in events that involve the AWS account root user. Which AWS service can the company use to meet these requirements?",
+    "options": ["Amazon CloudWatch", "Amazon GuardDuty", "AWS CloudTrail", "AWS Config"],
+    "answer": "AWS CloudTrail",
+    "explain": "Answer: AWS CloudTrail **Explanation:** AWS CloudTrail provides a record of actions taken by a user, role, or AWS service in the AWS Management Console, AWS Command Line Interface (CLI), and AWS SDKs. It can be used to monitor AWS Management Console sign-in events, including those involving the AWS account root user, and receive alerts for such events."
+  },
+  {
+    "question": "What is the MINIMUM AWS Support plan that provides technical support through phone calls?",
+    "options": ["Basic Support", "Developer Support", "Business Support", "Enterprise Support"],
+    "answer": "Business Support",
+    "explain": "Answer: Business Support **Explanation:** Business Support is the minimum AWS Support plan that provides technical support through phone calls. It offers 24/7 access to AWS Trusted Advisor, AWS Support API, and phone support during business hours for account and billing support, as well as general technical support."
+  },
+  {
+    "question": "What is the MINIMUM AWS Support plan that provides technical support through phone calls?",
+    "options": ["Basic Support", "Developer Support", "Business Support", "Enterprise Support"],
+    "answer": "Business Support",
+    "explain": "Answer: Business Support **Explanation:** Business Support is the minimum AWS Support plan that provides technical support through phone calls. It offers 24/7 access to AWS Trusted Advisor, AWS Support API, and phone support during business hours for account and billing support, as well as general technical support."
+  },
+  
+  ];
   
   export default quizData;
   

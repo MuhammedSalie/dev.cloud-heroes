@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import quizData from './quizData';
+import RobotClimbingStairs from './RobotClimbingStairs';
 
 function Quiz() {
 
   function generateRandom(maxLimit = quizData.length){
     let count = Math.random() * maxLimit;
-    console.log(count); 
-  
     count = Math.floor(count); 
   
     return count;
@@ -18,8 +17,8 @@ function Quiz() {
   const [showScore, setShowScore] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(""); 
   const [isCorrect, setIsCorrect] = useState(null);
-  const currentMax = 15;
-  
+  const currentMax = 10;
+      
   const handleAnswerOptionClick = (option) => {
     setIsCorrect(null); // Reset for the next question
     setSelectedAnswer(""); // Reset selected answer
@@ -53,23 +52,31 @@ function Quiz() {
         setIsCorrect(null); // Reset for the next question
         setSelectedAnswer(""); // Reset selected answer
     }
-    }, 5000); // Adjust time as needed
+    }, 2000); // Adjust time as needed
   };
 
   return (
     <div className='Quiz'>
       {showScore ? (
         <div className='score-section'>
-          You scored {score} out of {currentMax}
-        </div>
+            You scored {score} out of {currentMax}. The minimum passing score is 75%
+            {score >= currentMax*0.75 ? (
+  <h2>Congratulations, you have passed</h2>
+) : (
+  <h2>Better luck next time.</h2>
+)}
+ 
+</div>
       ) : (
         <>
           <div className='question-section'>
             <div className='question-count'>
-              <h2 className="my-5 text-center">Practice quiz {currentQuestion}</h2>
+            <RobotClimbingStairs score={score} currentMax={currentMax} /> {/* Rendering the RobotClimbingStairs component */}
+              <h3 className="my-5 text-center">Practice quiz ({currentQuestion} of {quizData.length}) </h3>
               <span>Question {currentCount + 1}</span>/{currentMax}
             </div>
-            <div className='question-text'>{quizData[currentQuestion].question}</div>
+            <div className='question-text'> {quizData[currentQuestion].question}</div>
+            
           </div>
           <div className='answer-section'>
             {quizData[currentQuestion].options.map((option) => (
@@ -81,6 +88,7 @@ function Quiz() {
                 {option}
               </button>
             ))}
+            
           </div>
           {selectedAnswer && (
             <div style={{ marginTop: '10px' }}>
