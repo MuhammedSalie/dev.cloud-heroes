@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dev.cloud-heroes/static/css/main.cb25abae.chunk.css",
-    "main.js": "/dev.cloud-heroes/static/js/main.a879ed7c.chunk.js",
-    "main.js.map": "/dev.cloud-heroes/static/js/main.a879ed7c.chunk.js.map",
+    "main.js": "/dev.cloud-heroes/static/js/main.6a2c5f61.chunk.js",
+    "main.js.map": "/dev.cloud-heroes/static/js/main.6a2c5f61.chunk.js.map",
     "runtime-main.js": "/dev.cloud-heroes/static/js/runtime-main.206df93a.js",
     "runtime-main.js.map": "/dev.cloud-heroes/static/js/runtime-main.206df93a.js.map",
     "static/js/2.9f62f1e8.chunk.js": "/dev.cloud-heroes/static/js/2.9f62f1e8.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.206df93a.js",
     "static/js/2.9f62f1e8.chunk.js",
     "static/css/main.cb25abae.chunk.css",
-    "static/js/main.a879ed7c.chunk.js"
+    "static/js/main.6a2c5f61.chunk.js"
   ]
 }
